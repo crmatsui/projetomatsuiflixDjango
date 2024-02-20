@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 # SECURITY WARNING: keep the secret key used in production secret!
 TOKEN_CSRF = os.getenv('TOKEN_CSRF')
-if TOKENCSRF:
+if TOKEN_CSRF:
     SECRET_KEY = TOKEN_CSRF
     CSRF_TRUSTED_ORIGINS = ['https://projetomatsuiflixdjango-production.up.railway.app/']
 else:
