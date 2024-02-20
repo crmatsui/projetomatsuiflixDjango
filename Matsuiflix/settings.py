@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'filme',
     'crispy_forms',
     'crispy_bootstrap5',
-    'corsheaders',
 ]
 
 MIDDLEWARE = [
