@@ -93,7 +93,7 @@ DATABASES = {
 
 import dj_database_url
 
-DATABASE_URL = 'postgres//:B2d1B453Fc3FFb-bca1F41a16A3111*f@viaduct.proxy.rlwy.net:39420/railway'
+DATABASE_URL = 'postgresql://postgres:B2d1B453Fc3FFb-bca1F41a16A3111*f@:5432/railway'
 if DATABASE_URL:
     DATABASES = {
         'default': dj_database_url.config(default=DATABASE_URL, conn_max_age=1800)
