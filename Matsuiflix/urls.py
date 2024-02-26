@@ -20,7 +20,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('admin/', admin.site.urls),# quando eu entrar no site pelo link de admin, sera por essa url
+#    path('admin/', admin.site.urls),# quando eu entrar no site pelo link de admin, sera por essa url
     path('', include('filme.urls', namespace='filme')), # quando eu entrar no site normal, como se fosse usuario vai apontar para essa url
 ]
 # as linhas acima de codigo sempre tem que fazer quando for iniciar seu app/site.
