@@ -36,7 +36,7 @@ ALLOWED_HOSTS = ["projetomatsuiflixdjango-production.up.railway.app", "localhost
 # Application definition
 
 INSTALLED_APPS = [
-#    'django.contrib.admin',
+    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -91,13 +91,13 @@ DATABASES = {
     }
 }
 
-import dj_database_url
+#import dj_database_url
 
-DATABASE_URL = 'postgresql://postgres:B2d1B453Fc3FFb-bca1F41a16A3111*f@viaduct.proxy.rlwy.net:39420/railway'
-if DATABASE_URL:
-    DATABASES = {
-       'default': dj_database_url.config(default=DATABASE_URL, conn_max_age=1800)
-    }
+#DATABASE_URL = 'postgresql://postgres:B2d1B453Fc3FFb-bca1F41a16A3111*f@viaduct.proxy.rlwy.net:39420/railway'
+#if DATABASE_URL:
+#    DATABASES = {
+#       'default': dj_database_url.config(default=DATABASE_URL, conn_max_age=1800)
+#    }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
